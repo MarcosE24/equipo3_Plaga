@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj",
+        "projectName": "Juego de la Plaga",
+        "projectPath": "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj",
+        "packagesPath": "C:\\Users\\Marcos Escobar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Marcos Escobar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
