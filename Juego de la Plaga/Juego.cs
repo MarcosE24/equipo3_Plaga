@@ -7,7 +7,9 @@ namespace Juego_de_la_Plaga
     public partial class Juego : Form
     {
         int ban = 0;    //bandear que permite saber que jugador esta de turno-- J1=0-- J2=1
-        Button[,] tablero = new Button[10,10];
+        int puntaje1 = 0;
+        int puntaje2 = 0;
+        Button[,] tablero = new Button[10, 10];
         public Juego()
         {
             InitializeComponent();
@@ -15,103 +17,215 @@ namespace Juego_de_la_Plaga
         private void Juego_Load(object sender, EventArgs e)
         {
             Ini_Tablero();
+            LblTurno.Text = "Jugador 1";
         }
-        void Movimiento(object sender, EventArgs e)
+        void PintarCuadro(object sender, EventArgs e)
         {
-            int x=0;
-            int y=0;
-            Coordenadas(sender,e,ref x,ref y);
-            //tablero[x, y].BackColor = Color.Red;
-            if(tablero[x,y].BackColor==Color.White)
+            int x = 0;
+            int y = 0;
+            bool movimiento = false;
+            Coordenadas(sender, e, ref x, ref y);
+            if(tablero[x, y].BackColor == Color.White)
             {
-                if(ban==0)  //si esta jugando el J1
+                if (ban == 0)
                 {
-                    tablero[x, y].BackColor = Color.LightCoral;
-                    if (y > 0 && x > 0 && (tablero[x - 1, y - 1].BackColor == Color.DodgerBlue || tablero[x - 1, y - 1].BackColor == Color.Blue))   //posicion esquina superior izquierda
+                    if (y > 0 && x > 0 && tablero[x - 1, y - 1].BackColor == Color.LightCoral)   //posicion esquina superior izquierda
                     {
-                        tablero[x - 1, y - 1].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    if (x > 0 && (tablero[x - 1, y].BackColor == Color.DodgerBlue || tablero[x - 1, y].BackColor == Color.Blue))  //posicion lado superior
+                    else if (x > 0 && tablero[x - 1, y].BackColor == Color.LightCoral)  //posicion lado superior
                     {
-                        tablero[x - 1, y].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    if (x > 0 && y < 9 && (tablero[x - 1, y + 1].BackColor == Color.DodgerBlue || tablero[x - 1, y + 1].BackColor == Color.Blue))   //posicion esquina superior derecha
+                    else if (x > 0 && y < 9 && tablero[x - 1, y + 1].BackColor == Color.LightCoral)   //posicion esquina superior derecha
                     {
-                        tablero[x - 1, y + 1].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    if (y > 0 && (tablero[x, y - 1].BackColor == Color.DodgerBlue || tablero[x, y - 1].BackColor == Color.Blue))  //posicion lado izquierdo
+                    else if (y > 0 && tablero[x, y - 1].BackColor == Color.LightCoral)  //posicion lado izquierdo
                     {
-                        tablero[x, y - 1].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    if (y < 9 && (tablero[x, y + 1].BackColor == Color.DodgerBlue || tablero[x, y + 1].BackColor == Color.Blue))  //posicion lado derecho
+                    else if (y < 9 && tablero[x, y + 1].BackColor == Color.LightCoral)  //posicion lado derecho
                     {
-                        tablero[x, y + 1].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    if (x < 9 && y > 0 && (tablero[x + 1, y - 1].BackColor == Color.DodgerBlue || tablero[x + 1, y - 1].BackColor == Color.Blue))   //posicion esquina inferior izquierda
+                    else if (x < 9 && y > 0 && tablero[x + 1, y - 1].BackColor == Color.LightCoral)   //posicion esquina inferior izquierda
                     {
-                        tablero[x + 1, y - 1].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    if (x < 9 && (tablero[x + 1, y].BackColor == Color.DodgerBlue || tablero[x + 1, y].BackColor == Color.Blue))  // posicion lado inferior
+                    else if (x < 9 && tablero[x + 1, y].BackColor == Color.LightCoral)  // posicion lado inferior
                     {
-                        tablero[x + 1, y].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    if (x < 9 && y < 9 && (tablero[x + 1, y + 1].BackColor == Color.DodgerBlue || tablero[x + 1, y + 1].BackColor == Color.Blue))   //posicion esquina inferior derecha
+                    else if (x < 9 && y < 9 && tablero[x + 1, y + 1].BackColor == Color.LightCoral)   //posicion esquina inferior derecha
                     {
-                        tablero[x + 1, y + 1].BackColor = Color.LightCoral;
+                        movimiento = true;
                     }
-                    ban = 1;
                 }
-                else    //si esta jugando el J2
+                else
                 {
-                    tablero[x, y].BackColor = Color.DodgerBlue;
-                    if (y > 0 && x > 0 && (tablero[x - 1, y - 1].BackColor == Color.LightCoral || tablero[x - 1, y - 1].BackColor == Color.Red))   //posicion esquina superior izquierda
+                    if (y > 0 && x > 0 && tablero[x - 1, y - 1].BackColor == Color.DodgerBlue)   //posicion esquina superior izquierda
                     {
-                        tablero[x - 1, y - 1].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    if (x > 0 && (tablero[x - 1, y].BackColor == Color.LightCoral || tablero[x - 1, y].BackColor == Color.Red))  //posicion lado superior
+                    else if (x > 0 && tablero[x - 1, y].BackColor == Color.DodgerBlue)  //posicion lado superior
                     {
-                        tablero[x - 1, y].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    if (x > 0 && y < 9 && (tablero[x - 1, y + 1].BackColor == Color.LightCoral || tablero[x - 1, y + 1].BackColor == Color.Red))   //posicion esquina superior derecha
+                    else if (x > 0 && y < 9 && tablero[x - 1, y + 1].BackColor == Color.DodgerBlue)   //posicion esquina superior derecha
                     {
-                        tablero[x - 1, y + 1].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    if (y > 0 && (tablero[x, y - 1].BackColor == Color.LightCoral || tablero[x, y - 1].BackColor == Color.Red))  //posicion lado izquierdo
+                    else if (y > 0 && tablero[x, y - 1].BackColor == Color.DodgerBlue)  //posicion lado izquierdo
                     {
-                        tablero[x, y - 1].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    if (y < 9 && (tablero[x, y + 1].BackColor == Color.LightCoral || tablero[x, y + 1].BackColor == Color.Red))  //posicion lado derecho
+                    else if (y < 9 && tablero[x, y + 1].BackColor == Color.DodgerBlue)  //posicion lado derecho
                     {
-                        tablero[x, y + 1].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    if (x < 9 && y > 0 && (tablero[x + 1, y - 1].BackColor == Color.LightCoral || tablero[x + 1, y - 1].BackColor == Color.Red))   //posicion esquina inferior izquierda
+                    else if (x < 9 && y > 0 && tablero[x + 1, y - 1].BackColor == Color.DodgerBlue)   //posicion esquina inferior izquierda
                     {
-                        tablero[x + 1, y - 1].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    if (x < 9 && (tablero[x + 1, y].BackColor == Color.LightCoral || tablero[x + 1, y].BackColor == Color.Red))  // posicion lado inferior
+                    else if (x < 9 && tablero[x + 1, y].BackColor == Color.DodgerBlue)  // posicion lado inferior
                     {
-                        tablero[x + 1, y].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    if (x < 9 && y < 9 && (tablero[x + 1, y + 1].BackColor == Color.LightCoral || tablero[x + 1, y + 1].BackColor == Color.Red))   //posicion esquina inferior derecha
+                    else if (x < 9 && y < 9 && tablero[x + 1, y + 1].BackColor == Color.DodgerBlue)   //posicion esquina inferior derecha
                     {
-                        tablero[x + 1, y + 1].BackColor = Color.DodgerBlue;
+                        movimiento = true;
                     }
-                    ban = 0;
+                }
+                if (movimiento == true)
+                {
+                    Jugada(x, y, ref ban);
                 }
             }
-            
-            
-            //MessageBox.Show(x.ToString()+" "+y.ToString());
-
-            // string nombre = ((Button)sender).Name;
-            // string[] cadena = nombre.Split("_");
-            // MessageBox.Show(cadena[0] + " " + cadena[1]);
-            /*if(((Button)sender).BackColor==Color.White)
-            {
-                //MessageBox.Show(nombre);
-            }*/
+        
         }
-        void Coordenadas(object sender, EventArgs e,ref int x,ref int y)
+        void PintarCuadroAdyacente(int x, int y, int ban)
+        {
+            if (ban == 0)  //si esta jugando el J1
+            {
+                if (y > 0 && x > 0 && tablero[x - 1, y - 1].BackColor == Color.DodgerBlue)   //posicion esquina superior izquierda
+                {
+                    tablero[x - 1, y - 1].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+                if (x > 0 && tablero[x - 1, y].BackColor == Color.DodgerBlue)  //posicion lado superior
+                {
+                    tablero[x - 1, y].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+                if (x > 0 && y < 9 && tablero[x - 1, y + 1].BackColor == Color.DodgerBlue)   //posicion esquina superior derecha
+                {
+                    tablero[x - 1, y + 1].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+                if (y > 0 && tablero[x, y - 1].BackColor == Color.DodgerBlue)  //posicion lado izquierdo
+                {
+                    tablero[x, y - 1].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+                if (y < 9 && tablero[x, y + 1].BackColor == Color.DodgerBlue)  //posicion lado derecho
+                {
+                    tablero[x, y + 1].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+                if (x < 9 && y > 0 && tablero[x + 1, y - 1].BackColor == Color.DodgerBlue)   //posicion esquina inferior izquierda
+                {
+                    tablero[x + 1, y - 1].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+                if (x < 9 && tablero[x + 1, y].BackColor == Color.DodgerBlue)  // posicion lado inferior
+                {
+                    tablero[x + 1, y].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+                if (x < 9 && y < 9 && tablero[x + 1, y + 1].BackColor == Color.DodgerBlue)   //posicion esquina inferior derecha
+                {
+                    tablero[x + 1, y + 1].BackColor = Color.LightCoral;
+                    Puntaje(ban);
+                }
+            }
+            else    //si esta jugando el J2
+            {
+                if (y > 0 && x > 0 && tablero[x - 1, y - 1].BackColor == Color.LightCoral)   //posicion esquina superior izquierda
+                {
+                    tablero[x - 1, y - 1].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+                if (x > 0 && tablero[x - 1, y].BackColor == Color.LightCoral)  //posicion lado superior
+                {
+                    tablero[x - 1, y].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+                if (x > 0 && y < 9 && tablero[x - 1, y + 1].BackColor == Color.LightCoral)   //posicion esquina superior derecha
+                {
+                    tablero[x - 1, y + 1].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+                if (y > 0 && tablero[x, y - 1].BackColor == Color.LightCoral)  //posicion lado izquierdo
+                {
+                    tablero[x, y - 1].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+                if (y < 9 && tablero[x, y + 1].BackColor == Color.LightCoral)  //posicion lado derecho
+                {
+                    tablero[x, y + 1].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+                if (x < 9 && y > 0 && tablero[x + 1, y - 1].BackColor == Color.LightCoral)   //posicion esquina inferior izquierda
+                {
+                    tablero[x + 1, y - 1].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+                if (x < 9 && tablero[x + 1, y].BackColor == Color.LightCoral)  // posicion lado inferior
+                {
+                    tablero[x + 1, y].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+                if (x < 9 && y < 9 && tablero[x + 1, y + 1].BackColor == Color.LightCoral)   //posicion esquina inferior derecha
+                {
+                    tablero[x + 1, y + 1].BackColor = Color.DodgerBlue;
+                    Puntaje(ban);
+                }
+            }
+        }
+        void Jugada(int x,int y,ref int ban)
+        {
+            if(ban==0)
+            {
+                tablero[x, y].BackColor = Color.LightCoral;
+                PintarCuadroAdyacente(x, y, ban);
+                Puntaje(ban);
+                ban = 1;
+                LblTurno.Text = "Jugador 2";
+            }
+            else
+            {
+                tablero[x, y].BackColor = Color.DodgerBlue;
+                PintarCuadroAdyacente(x, y, ban);
+                Puntaje(ban);
+                ban = 0;
+                LblTurno.Text = "Jugador 1";
+            }
+        }
+        void Puntaje(int ban)
+        {
+            if(ban==0)
+            {
+                puntaje1++;
+                LblPuntaje1.Text = puntaje1.ToString();
+            }
+            else
+            {
+                puntaje2++;
+                LblPuntaje2.Text = puntaje2.ToString();
+            }
+        }
+        void Coordenadas(object sender, EventArgs e, ref int x, ref int y)    //Funcion que toma el nombre del boton seleccionado, splitea y obtiene el valo de x e y.
         {
             string nombre = ((Button)sender).Name;
             string[] cadena = nombre.Split("n");
@@ -232,6 +346,9 @@ namespace Juego_de_la_Plaga
             tablero[9, 7] = new Button(); tablero[9, 7] = Btn9_7;
             tablero[9, 8] = new Button(); tablero[9, 8] = Btn9_8;
             tablero[9, 9] = new Button(); tablero[9, 9] = Btn9_9;
+
+            tablero[0, 0].BackColor = Color.LightCoral;
+            tablero[9, 9].BackColor = Color.DodgerBlue;
         }
     }
 }

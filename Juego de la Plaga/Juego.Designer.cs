@@ -129,6 +129,13 @@ namespace Juego_de_la_Plaga
             this.Btn8_1 = new System.Windows.Forms.Button();
             this.Btn8_0 = new System.Windows.Forms.Button();
             this.Btn2_0 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LblPuntaje1 = new System.Windows.Forms.Label();
+            this.LblPuntaje2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LblTurno = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Btn0_0
@@ -140,7 +147,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_0.Size = new System.Drawing.Size(40, 40);
             this.Btn0_0.TabIndex = 0;
             this.Btn0_0.UseVisualStyleBackColor = false;
-            this.Btn0_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_1
             // 
@@ -151,7 +158,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_1.Size = new System.Drawing.Size(40, 40);
             this.Btn0_1.TabIndex = 1;
             this.Btn0_1.UseVisualStyleBackColor = false;
-            this.Btn0_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_3
             // 
@@ -162,7 +169,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_3.Size = new System.Drawing.Size(40, 40);
             this.Btn0_3.TabIndex = 3;
             this.Btn0_3.UseVisualStyleBackColor = false;
-            this.Btn0_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_2
             // 
@@ -173,7 +180,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_2.Size = new System.Drawing.Size(40, 40);
             this.Btn0_2.TabIndex = 2;
             this.Btn0_2.UseVisualStyleBackColor = false;
-            this.Btn0_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_7
             // 
@@ -184,7 +191,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_7.Size = new System.Drawing.Size(40, 40);
             this.Btn0_7.TabIndex = 7;
             this.Btn0_7.UseVisualStyleBackColor = false;
-            this.Btn0_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_6
             // 
@@ -195,7 +202,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_6.Size = new System.Drawing.Size(40, 40);
             this.Btn0_6.TabIndex = 6;
             this.Btn0_6.UseVisualStyleBackColor = false;
-            this.Btn0_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_5
             // 
@@ -206,7 +213,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_5.Size = new System.Drawing.Size(40, 40);
             this.Btn0_5.TabIndex = 5;
             this.Btn0_5.UseVisualStyleBackColor = false;
-            this.Btn0_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_4
             // 
@@ -217,7 +224,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_4.Size = new System.Drawing.Size(40, 40);
             this.Btn0_4.TabIndex = 4;
             this.Btn0_4.UseVisualStyleBackColor = false;
-            this.Btn0_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_9
             // 
@@ -228,7 +235,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_9.Size = new System.Drawing.Size(40, 40);
             this.Btn0_9.TabIndex = 9;
             this.Btn0_9.UseVisualStyleBackColor = false;
-            this.Btn0_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn0_8
             // 
@@ -239,7 +246,7 @@ namespace Juego_de_la_Plaga
             this.Btn0_8.Size = new System.Drawing.Size(40, 40);
             this.Btn0_8.TabIndex = 8;
             this.Btn0_8.UseVisualStyleBackColor = false;
-            this.Btn0_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn0_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_9
             // 
@@ -250,7 +257,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_9.Size = new System.Drawing.Size(40, 40);
             this.Btn1_9.TabIndex = 19;
             this.Btn1_9.UseVisualStyleBackColor = false;
-            this.Btn1_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_8
             // 
@@ -261,7 +268,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_8.Size = new System.Drawing.Size(40, 40);
             this.Btn1_8.TabIndex = 18;
             this.Btn1_8.UseVisualStyleBackColor = false;
-            this.Btn1_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_7
             // 
@@ -272,7 +279,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_7.Size = new System.Drawing.Size(40, 40);
             this.Btn1_7.TabIndex = 17;
             this.Btn1_7.UseVisualStyleBackColor = false;
-            this.Btn1_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_6
             // 
@@ -283,7 +290,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_6.Size = new System.Drawing.Size(40, 40);
             this.Btn1_6.TabIndex = 16;
             this.Btn1_6.UseVisualStyleBackColor = false;
-            this.Btn1_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_5
             // 
@@ -294,7 +301,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_5.Size = new System.Drawing.Size(40, 40);
             this.Btn1_5.TabIndex = 15;
             this.Btn1_5.UseVisualStyleBackColor = false;
-            this.Btn1_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_4
             // 
@@ -305,7 +312,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_4.Size = new System.Drawing.Size(40, 40);
             this.Btn1_4.TabIndex = 14;
             this.Btn1_4.UseVisualStyleBackColor = false;
-            this.Btn1_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_3
             // 
@@ -316,7 +323,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_3.Size = new System.Drawing.Size(40, 40);
             this.Btn1_3.TabIndex = 13;
             this.Btn1_3.UseVisualStyleBackColor = false;
-            this.Btn1_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_2
             // 
@@ -327,7 +334,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_2.Size = new System.Drawing.Size(40, 40);
             this.Btn1_2.TabIndex = 12;
             this.Btn1_2.UseVisualStyleBackColor = false;
-            this.Btn1_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_1
             // 
@@ -338,7 +345,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_1.Size = new System.Drawing.Size(40, 40);
             this.Btn1_1.TabIndex = 11;
             this.Btn1_1.UseVisualStyleBackColor = false;
-            this.Btn1_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn1_0
             // 
@@ -349,7 +356,7 @@ namespace Juego_de_la_Plaga
             this.Btn1_0.Size = new System.Drawing.Size(40, 40);
             this.Btn1_0.TabIndex = 10;
             this.Btn1_0.UseVisualStyleBackColor = false;
-            this.Btn1_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn1_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_9
             // 
@@ -360,7 +367,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_9.Size = new System.Drawing.Size(40, 40);
             this.Btn3_9.TabIndex = 39;
             this.Btn3_9.UseVisualStyleBackColor = false;
-            this.Btn3_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_8
             // 
@@ -371,7 +378,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_8.Size = new System.Drawing.Size(40, 40);
             this.Btn3_8.TabIndex = 38;
             this.Btn3_8.UseVisualStyleBackColor = false;
-            this.Btn3_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_7
             // 
@@ -382,7 +389,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_7.Size = new System.Drawing.Size(40, 40);
             this.Btn3_7.TabIndex = 37;
             this.Btn3_7.UseVisualStyleBackColor = false;
-            this.Btn3_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_6
             // 
@@ -393,7 +400,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_6.Size = new System.Drawing.Size(40, 40);
             this.Btn3_6.TabIndex = 36;
             this.Btn3_6.UseVisualStyleBackColor = false;
-            this.Btn3_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_5
             // 
@@ -404,7 +411,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_5.Size = new System.Drawing.Size(40, 40);
             this.Btn3_5.TabIndex = 35;
             this.Btn3_5.UseVisualStyleBackColor = false;
-            this.Btn3_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_4
             // 
@@ -415,7 +422,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_4.Size = new System.Drawing.Size(40, 40);
             this.Btn3_4.TabIndex = 34;
             this.Btn3_4.UseVisualStyleBackColor = false;
-            this.Btn3_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_3
             // 
@@ -426,7 +433,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_3.Size = new System.Drawing.Size(40, 40);
             this.Btn3_3.TabIndex = 33;
             this.Btn3_3.UseVisualStyleBackColor = false;
-            this.Btn3_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_2
             // 
@@ -437,7 +444,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_2.Size = new System.Drawing.Size(40, 40);
             this.Btn3_2.TabIndex = 32;
             this.Btn3_2.UseVisualStyleBackColor = false;
-            this.Btn3_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_1
             // 
@@ -448,7 +455,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_1.Size = new System.Drawing.Size(40, 40);
             this.Btn3_1.TabIndex = 31;
             this.Btn3_1.UseVisualStyleBackColor = false;
-            this.Btn3_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn3_0
             // 
@@ -459,7 +466,7 @@ namespace Juego_de_la_Plaga
             this.Btn3_0.Size = new System.Drawing.Size(40, 40);
             this.Btn3_0.TabIndex = 30;
             this.Btn3_0.UseVisualStyleBackColor = false;
-            this.Btn3_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn3_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_9
             // 
@@ -470,7 +477,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_9.Size = new System.Drawing.Size(40, 40);
             this.Btn2_9.TabIndex = 29;
             this.Btn2_9.UseVisualStyleBackColor = false;
-            this.Btn2_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_8
             // 
@@ -481,7 +488,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_8.Size = new System.Drawing.Size(40, 40);
             this.Btn2_8.TabIndex = 28;
             this.Btn2_8.UseVisualStyleBackColor = false;
-            this.Btn2_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_7
             // 
@@ -492,7 +499,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_7.Size = new System.Drawing.Size(40, 40);
             this.Btn2_7.TabIndex = 27;
             this.Btn2_7.UseVisualStyleBackColor = false;
-            this.Btn2_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_6
             // 
@@ -503,7 +510,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_6.Size = new System.Drawing.Size(40, 40);
             this.Btn2_6.TabIndex = 26;
             this.Btn2_6.UseVisualStyleBackColor = false;
-            this.Btn2_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_5
             // 
@@ -514,7 +521,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_5.Size = new System.Drawing.Size(40, 40);
             this.Btn2_5.TabIndex = 25;
             this.Btn2_5.UseVisualStyleBackColor = false;
-            this.Btn2_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_4
             // 
@@ -525,7 +532,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_4.Size = new System.Drawing.Size(40, 40);
             this.Btn2_4.TabIndex = 24;
             this.Btn2_4.UseVisualStyleBackColor = false;
-            this.Btn2_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_3
             // 
@@ -536,7 +543,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_3.Size = new System.Drawing.Size(40, 40);
             this.Btn2_3.TabIndex = 23;
             this.Btn2_3.UseVisualStyleBackColor = false;
-            this.Btn2_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_2
             // 
@@ -547,7 +554,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_2.Size = new System.Drawing.Size(40, 40);
             this.Btn2_2.TabIndex = 22;
             this.Btn2_2.UseVisualStyleBackColor = false;
-            this.Btn2_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_1
             // 
@@ -558,7 +565,7 @@ namespace Juego_de_la_Plaga
             this.Btn2_1.Size = new System.Drawing.Size(40, 40);
             this.Btn2_1.TabIndex = 21;
             this.Btn2_1.UseVisualStyleBackColor = false;
-            this.Btn2_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_9
             // 
@@ -569,7 +576,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_9.Size = new System.Drawing.Size(40, 40);
             this.Btn7_9.TabIndex = 79;
             this.Btn7_9.UseVisualStyleBackColor = false;
-            this.Btn7_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_8
             // 
@@ -580,7 +587,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_8.Size = new System.Drawing.Size(40, 40);
             this.Btn7_8.TabIndex = 78;
             this.Btn7_8.UseVisualStyleBackColor = false;
-            this.Btn7_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_7
             // 
@@ -591,7 +598,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_7.Size = new System.Drawing.Size(40, 40);
             this.Btn7_7.TabIndex = 77;
             this.Btn7_7.UseVisualStyleBackColor = false;
-            this.Btn7_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_6
             // 
@@ -602,7 +609,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_6.Size = new System.Drawing.Size(40, 40);
             this.Btn7_6.TabIndex = 76;
             this.Btn7_6.UseVisualStyleBackColor = false;
-            this.Btn7_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_5
             // 
@@ -613,7 +620,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_5.Size = new System.Drawing.Size(40, 40);
             this.Btn7_5.TabIndex = 75;
             this.Btn7_5.UseVisualStyleBackColor = false;
-            this.Btn7_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_4
             // 
@@ -624,7 +631,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_4.Size = new System.Drawing.Size(40, 40);
             this.Btn7_4.TabIndex = 74;
             this.Btn7_4.UseVisualStyleBackColor = false;
-            this.Btn7_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_3
             // 
@@ -635,7 +642,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_3.Size = new System.Drawing.Size(40, 40);
             this.Btn7_3.TabIndex = 73;
             this.Btn7_3.UseVisualStyleBackColor = false;
-            this.Btn7_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_2
             // 
@@ -646,7 +653,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_2.Size = new System.Drawing.Size(40, 40);
             this.Btn7_2.TabIndex = 72;
             this.Btn7_2.UseVisualStyleBackColor = false;
-            this.Btn7_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_1
             // 
@@ -657,7 +664,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_1.Size = new System.Drawing.Size(40, 40);
             this.Btn7_1.TabIndex = 71;
             this.Btn7_1.UseVisualStyleBackColor = false;
-            this.Btn7_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn7_0
             // 
@@ -668,7 +675,7 @@ namespace Juego_de_la_Plaga
             this.Btn7_0.Size = new System.Drawing.Size(40, 40);
             this.Btn7_0.TabIndex = 70;
             this.Btn7_0.UseVisualStyleBackColor = false;
-            this.Btn7_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn7_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_9
             // 
@@ -679,7 +686,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_9.Size = new System.Drawing.Size(40, 40);
             this.Btn6_9.TabIndex = 69;
             this.Btn6_9.UseVisualStyleBackColor = false;
-            this.Btn6_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_8
             // 
@@ -690,7 +697,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_8.Size = new System.Drawing.Size(40, 40);
             this.Btn6_8.TabIndex = 68;
             this.Btn6_8.UseVisualStyleBackColor = false;
-            this.Btn6_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_7
             // 
@@ -701,7 +708,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_7.Size = new System.Drawing.Size(40, 40);
             this.Btn6_7.TabIndex = 67;
             this.Btn6_7.UseVisualStyleBackColor = false;
-            this.Btn6_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_6
             // 
@@ -712,7 +719,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_6.Size = new System.Drawing.Size(40, 40);
             this.Btn6_6.TabIndex = 66;
             this.Btn6_6.UseVisualStyleBackColor = false;
-            this.Btn6_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_5
             // 
@@ -723,7 +730,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_5.Size = new System.Drawing.Size(40, 40);
             this.Btn6_5.TabIndex = 65;
             this.Btn6_5.UseVisualStyleBackColor = false;
-            this.Btn6_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_4
             // 
@@ -734,7 +741,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_4.Size = new System.Drawing.Size(40, 40);
             this.Btn6_4.TabIndex = 64;
             this.Btn6_4.UseVisualStyleBackColor = false;
-            this.Btn6_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_3
             // 
@@ -745,7 +752,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_3.Size = new System.Drawing.Size(40, 40);
             this.Btn6_3.TabIndex = 63;
             this.Btn6_3.UseVisualStyleBackColor = false;
-            this.Btn6_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_2
             // 
@@ -756,7 +763,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_2.Size = new System.Drawing.Size(40, 40);
             this.Btn6_2.TabIndex = 62;
             this.Btn6_2.UseVisualStyleBackColor = false;
-            this.Btn6_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_1
             // 
@@ -767,7 +774,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_1.Size = new System.Drawing.Size(40, 40);
             this.Btn6_1.TabIndex = 61;
             this.Btn6_1.UseVisualStyleBackColor = false;
-            this.Btn6_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn6_0
             // 
@@ -778,7 +785,7 @@ namespace Juego_de_la_Plaga
             this.Btn6_0.Size = new System.Drawing.Size(40, 40);
             this.Btn6_0.TabIndex = 60;
             this.Btn6_0.UseVisualStyleBackColor = false;
-            this.Btn6_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn6_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_9
             // 
@@ -789,7 +796,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_9.Size = new System.Drawing.Size(40, 40);
             this.Btn5_9.TabIndex = 59;
             this.Btn5_9.UseVisualStyleBackColor = false;
-            this.Btn5_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_8
             // 
@@ -800,7 +807,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_8.Size = new System.Drawing.Size(40, 40);
             this.Btn5_8.TabIndex = 58;
             this.Btn5_8.UseVisualStyleBackColor = false;
-            this.Btn5_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_7
             // 
@@ -811,7 +818,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_7.Size = new System.Drawing.Size(40, 40);
             this.Btn5_7.TabIndex = 57;
             this.Btn5_7.UseVisualStyleBackColor = false;
-            this.Btn5_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_6
             // 
@@ -822,7 +829,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_6.Size = new System.Drawing.Size(40, 40);
             this.Btn5_6.TabIndex = 56;
             this.Btn5_6.UseVisualStyleBackColor = false;
-            this.Btn5_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_5
             // 
@@ -833,7 +840,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_5.Size = new System.Drawing.Size(40, 40);
             this.Btn5_5.TabIndex = 55;
             this.Btn5_5.UseVisualStyleBackColor = false;
-            this.Btn5_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_4
             // 
@@ -844,7 +851,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_4.Size = new System.Drawing.Size(40, 40);
             this.Btn5_4.TabIndex = 54;
             this.Btn5_4.UseVisualStyleBackColor = false;
-            this.Btn5_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_3
             // 
@@ -855,7 +862,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_3.Size = new System.Drawing.Size(40, 40);
             this.Btn5_3.TabIndex = 53;
             this.Btn5_3.UseVisualStyleBackColor = false;
-            this.Btn5_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_2
             // 
@@ -866,7 +873,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_2.Size = new System.Drawing.Size(40, 40);
             this.Btn5_2.TabIndex = 52;
             this.Btn5_2.UseVisualStyleBackColor = false;
-            this.Btn5_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_1
             // 
@@ -877,7 +884,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_1.Size = new System.Drawing.Size(40, 40);
             this.Btn5_1.TabIndex = 51;
             this.Btn5_1.UseVisualStyleBackColor = false;
-            this.Btn5_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn5_0
             // 
@@ -888,7 +895,7 @@ namespace Juego_de_la_Plaga
             this.Btn5_0.Size = new System.Drawing.Size(40, 40);
             this.Btn5_0.TabIndex = 50;
             this.Btn5_0.UseVisualStyleBackColor = false;
-            this.Btn5_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn5_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_9
             // 
@@ -899,7 +906,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_9.Size = new System.Drawing.Size(40, 40);
             this.Btn4_9.TabIndex = 49;
             this.Btn4_9.UseVisualStyleBackColor = false;
-            this.Btn4_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_8
             // 
@@ -910,7 +917,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_8.Size = new System.Drawing.Size(40, 40);
             this.Btn4_8.TabIndex = 48;
             this.Btn4_8.UseVisualStyleBackColor = false;
-            this.Btn4_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_7
             // 
@@ -921,7 +928,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_7.Size = new System.Drawing.Size(40, 40);
             this.Btn4_7.TabIndex = 47;
             this.Btn4_7.UseVisualStyleBackColor = false;
-            this.Btn4_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_6
             // 
@@ -932,7 +939,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_6.Size = new System.Drawing.Size(40, 40);
             this.Btn4_6.TabIndex = 46;
             this.Btn4_6.UseVisualStyleBackColor = false;
-            this.Btn4_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_5
             // 
@@ -943,7 +950,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_5.Size = new System.Drawing.Size(40, 40);
             this.Btn4_5.TabIndex = 45;
             this.Btn4_5.UseVisualStyleBackColor = false;
-            this.Btn4_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_4
             // 
@@ -954,7 +961,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_4.Size = new System.Drawing.Size(40, 40);
             this.Btn4_4.TabIndex = 44;
             this.Btn4_4.UseVisualStyleBackColor = false;
-            this.Btn4_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_3
             // 
@@ -965,7 +972,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_3.Size = new System.Drawing.Size(40, 40);
             this.Btn4_3.TabIndex = 43;
             this.Btn4_3.UseVisualStyleBackColor = false;
-            this.Btn4_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_2
             // 
@@ -976,7 +983,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_2.Size = new System.Drawing.Size(40, 40);
             this.Btn4_2.TabIndex = 42;
             this.Btn4_2.UseVisualStyleBackColor = false;
-            this.Btn4_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_1
             // 
@@ -987,7 +994,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_1.Size = new System.Drawing.Size(40, 40);
             this.Btn4_1.TabIndex = 41;
             this.Btn4_1.UseVisualStyleBackColor = false;
-            this.Btn4_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn4_0
             // 
@@ -998,7 +1005,7 @@ namespace Juego_de_la_Plaga
             this.Btn4_0.Size = new System.Drawing.Size(40, 40);
             this.Btn4_0.TabIndex = 40;
             this.Btn4_0.UseVisualStyleBackColor = false;
-            this.Btn4_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn4_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_9
             // 
@@ -1009,7 +1016,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_9.Size = new System.Drawing.Size(40, 40);
             this.Btn9_9.TabIndex = 99;
             this.Btn9_9.UseVisualStyleBackColor = false;
-            this.Btn9_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_8
             // 
@@ -1020,7 +1027,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_8.Size = new System.Drawing.Size(40, 40);
             this.Btn9_8.TabIndex = 98;
             this.Btn9_8.UseVisualStyleBackColor = false;
-            this.Btn9_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_7
             // 
@@ -1031,7 +1038,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_7.Size = new System.Drawing.Size(40, 40);
             this.Btn9_7.TabIndex = 97;
             this.Btn9_7.UseVisualStyleBackColor = false;
-            this.Btn9_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_6
             // 
@@ -1042,7 +1049,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_6.Size = new System.Drawing.Size(40, 40);
             this.Btn9_6.TabIndex = 96;
             this.Btn9_6.UseVisualStyleBackColor = false;
-            this.Btn9_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_5
             // 
@@ -1053,7 +1060,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_5.Size = new System.Drawing.Size(40, 40);
             this.Btn9_5.TabIndex = 95;
             this.Btn9_5.UseVisualStyleBackColor = false;
-            this.Btn9_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_4
             // 
@@ -1064,7 +1071,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_4.Size = new System.Drawing.Size(40, 40);
             this.Btn9_4.TabIndex = 94;
             this.Btn9_4.UseVisualStyleBackColor = false;
-            this.Btn9_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_3
             // 
@@ -1075,7 +1082,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_3.Size = new System.Drawing.Size(40, 40);
             this.Btn9_3.TabIndex = 93;
             this.Btn9_3.UseVisualStyleBackColor = false;
-            this.Btn9_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_2
             // 
@@ -1086,7 +1093,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_2.Size = new System.Drawing.Size(40, 40);
             this.Btn9_2.TabIndex = 92;
             this.Btn9_2.UseVisualStyleBackColor = false;
-            this.Btn9_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_1
             // 
@@ -1097,7 +1104,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_1.Size = new System.Drawing.Size(40, 40);
             this.Btn9_1.TabIndex = 91;
             this.Btn9_1.UseVisualStyleBackColor = false;
-            this.Btn9_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn9_0
             // 
@@ -1108,7 +1115,7 @@ namespace Juego_de_la_Plaga
             this.Btn9_0.Size = new System.Drawing.Size(40, 40);
             this.Btn9_0.TabIndex = 90;
             this.Btn9_0.UseVisualStyleBackColor = false;
-            this.Btn9_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn9_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_9
             // 
@@ -1119,7 +1126,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_9.Size = new System.Drawing.Size(40, 40);
             this.Btn8_9.TabIndex = 89;
             this.Btn8_9.UseVisualStyleBackColor = false;
-            this.Btn8_9.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_9.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_8
             // 
@@ -1130,7 +1137,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_8.Size = new System.Drawing.Size(40, 40);
             this.Btn8_8.TabIndex = 88;
             this.Btn8_8.UseVisualStyleBackColor = false;
-            this.Btn8_8.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_8.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_7
             // 
@@ -1141,7 +1148,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_7.Size = new System.Drawing.Size(40, 40);
             this.Btn8_7.TabIndex = 87;
             this.Btn8_7.UseVisualStyleBackColor = false;
-            this.Btn8_7.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_7.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_6
             // 
@@ -1152,7 +1159,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_6.Size = new System.Drawing.Size(40, 40);
             this.Btn8_6.TabIndex = 86;
             this.Btn8_6.UseVisualStyleBackColor = false;
-            this.Btn8_6.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_6.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_5
             // 
@@ -1163,7 +1170,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_5.Size = new System.Drawing.Size(40, 40);
             this.Btn8_5.TabIndex = 85;
             this.Btn8_5.UseVisualStyleBackColor = false;
-            this.Btn8_5.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_5.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_4
             // 
@@ -1174,7 +1181,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_4.Size = new System.Drawing.Size(40, 40);
             this.Btn8_4.TabIndex = 84;
             this.Btn8_4.UseVisualStyleBackColor = false;
-            this.Btn8_4.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_4.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_3
             // 
@@ -1185,7 +1192,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_3.Size = new System.Drawing.Size(40, 40);
             this.Btn8_3.TabIndex = 83;
             this.Btn8_3.UseVisualStyleBackColor = false;
-            this.Btn8_3.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_3.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_2
             // 
@@ -1196,7 +1203,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_2.Size = new System.Drawing.Size(40, 40);
             this.Btn8_2.TabIndex = 82;
             this.Btn8_2.UseVisualStyleBackColor = false;
-            this.Btn8_2.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_2.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_1
             // 
@@ -1207,7 +1214,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_1.Size = new System.Drawing.Size(40, 40);
             this.Btn8_1.TabIndex = 81;
             this.Btn8_1.UseVisualStyleBackColor = false;
-            this.Btn8_1.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_1.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn8_0
             // 
@@ -1218,7 +1225,7 @@ namespace Juego_de_la_Plaga
             this.Btn8_0.Size = new System.Drawing.Size(40, 40);
             this.Btn8_0.TabIndex = 80;
             this.Btn8_0.UseVisualStyleBackColor = false;
-            this.Btn8_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn8_0.Click += new System.EventHandler(this.PintarCuadro);
             // 
             // Btn2_0
             // 
@@ -1229,7 +1236,76 @@ namespace Juego_de_la_Plaga
             this.Btn2_0.Size = new System.Drawing.Size(40, 40);
             this.Btn2_0.TabIndex = 100;
             this.Btn2_0.UseVisualStyleBackColor = false;
-            this.Btn2_0.Click += new System.EventHandler(this.Movimiento);
+            this.Btn2_0.Click += new System.EventHandler(this.PintarCuadro);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(551, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.TabIndex = 101;
+            this.label1.Text = "Puntos:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(691, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 20);
+            this.label3.TabIndex = 103;
+            this.label3.Text = "Jugador 2:";
+            // 
+            // LblPuntaje1
+            // 
+            this.LblPuntaje1.AutoSize = true;
+            this.LblPuntaje1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblPuntaje1.Location = new System.Drawing.Point(649, 131);
+            this.LblPuntaje1.Name = "LblPuntaje1";
+            this.LblPuntaje1.Size = new System.Drawing.Size(18, 20);
+            this.LblPuntaje1.TabIndex = 104;
+            this.LblPuntaje1.Text = "0";
+            // 
+            // LblPuntaje2
+            // 
+            this.LblPuntaje2.AutoSize = true;
+            this.LblPuntaje2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblPuntaje2.Location = new System.Drawing.Point(789, 131);
+            this.LblPuntaje2.Name = "LblPuntaje2";
+            this.LblPuntaje2.Size = new System.Drawing.Size(18, 20);
+            this.LblPuntaje2.TabIndex = 105;
+            this.LblPuntaje2.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(618, 61);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 20);
+            this.label4.TabIndex = 106;
+            this.label4.Text = "Turno de:";
+            // 
+            // LblTurno
+            // 
+            this.LblTurno.AutoSize = true;
+            this.LblTurno.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblTurno.Location = new System.Drawing.Point(705, 61);
+            this.LblTurno.Name = "LblTurno";
+            this.LblTurno.Size = new System.Drawing.Size(0, 20);
+            this.LblTurno.TabIndex = 107;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(551, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 20);
+            this.label2.TabIndex = 108;
+            this.label2.Text = "Jugador 1:";
             // 
             // Juego
             // 
@@ -1237,6 +1313,13 @@ namespace Juego_de_la_Plaga
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LblTurno);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.LblPuntaje2);
+            this.Controls.Add(this.LblPuntaje1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Btn2_0);
             this.Controls.Add(this.Btn9_9);
             this.Controls.Add(this.Btn9_8);
@@ -1341,6 +1424,7 @@ namespace Juego_de_la_Plaga
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Juego_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1446,5 +1530,12 @@ namespace Juego_de_la_Plaga
         private System.Windows.Forms.Button Btn8_1;
         private System.Windows.Forms.Button Btn8_0;
         private System.Windows.Forms.Button Btn2_0;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LblPuntaje1;
+        private System.Windows.Forms.Label LblPuntaje2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LblTurno;
+        private System.Windows.Forms.Label label2;
     }
 }
