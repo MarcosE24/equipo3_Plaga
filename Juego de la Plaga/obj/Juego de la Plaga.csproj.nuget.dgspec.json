@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj": {}
+    "C:\\Users\\Nelson\\Source\\Repos\\Plaga_Game\\Juego de la Plaga\\Juego de la Plaga.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj": {
+    "C:\\Users\\Nelson\\Source\\Repos\\Plaga_Game\\Juego de la Plaga\\Juego de la Plaga.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj",
+        "projectUniqueName": "C:\\Users\\Nelson\\Source\\Repos\\Plaga_Game\\Juego de la Plaga\\Juego de la Plaga.csproj",
         "projectName": "Juego de la Plaga",
-        "projectPath": "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\Juego de la Plaga.csproj",
-        "packagesPath": "C:\\Users\\Marcos Escobar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marcos Escobar\\Documents\\LP II\\Juego de la Plaga\\Juego de la Plaga\\obj\\",
+        "projectPath": "C:\\Users\\Nelson\\Source\\Repos\\Plaga_Game\\Juego de la Plaga\\Juego de la Plaga.csproj",
+        "packagesPath": "C:\\Users\\Nelson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nelson\\Source\\Repos\\Plaga_Game\\Juego de la Plaga\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Marcos Escobar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nelson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

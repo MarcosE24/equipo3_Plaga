@@ -16,3 +16,24 @@ C:\Users\Marcos Escobar\Documents\LP II\Juego de la Plaga\Juego de la Plaga\obj\
 C:\Users\Marcos Escobar\Documents\LP II\Juego de la Plaga\Juego de la Plaga\obj\Debug\net5.0-windows\ref\Juego de la Plaga.dll
 C:\Users\Marcos Escobar\Documents\LP II\Juego de la Plaga\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.pdb
 C:\Users\Marcos Escobar\Documents\LP II\Juego de la Plaga\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.genruntimeconfig.cache
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\bin\Debug\net5.0-windows\Juego de la Plaga.exe
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\bin\Debug\net5.0-windows\Juego de la Plaga.deps.json
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\bin\Debug\net5.0-windows\Juego de la Plaga.runtimeconfig.json
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\bin\Debug\net5.0-windows\Juego de la Plaga.runtimeconfig.dev.json
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\bin\Debug\net5.0-windows\Juego de la Plaga.dll
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\bin\Debug\net5.0-windows\ref\Juego de la Plaga.dll
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\bin\Debug\net5.0-windows\Juego de la Plaga.pdb
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.csprojAssemblyReference.cache
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego_de_la_Plaga.Autores.resources
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego_de_la_Plaga.Instructivos.resources
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego_de_la_Plaga.Juego.resources
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego_de_la_Plaga.Menu.resources
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.csproj.GenerateResource.cache
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.AssemblyInfoInputs.cache
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.AssemblyInfo.cs
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.csproj.CoreCompileInputs.cache
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.dll
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\ref\Juego de la Plaga.dll
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.pdb
+C:\Users\Nelson\Source\Repos\Plaga_Game\Juego de la Plaga\obj\Debug\net5.0-windows\Juego de la Plaga.genruntimeconfig.cache
